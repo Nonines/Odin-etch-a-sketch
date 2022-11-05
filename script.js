@@ -21,6 +21,11 @@ function getEtchSquares() {
     createEtchBox(getUserNumber());
 }
 
+function resetgrid() {
+    container.replaceChildren();
+    createEtchBox();
+}
+
 function createEtchBox(dimension = 16) {
     container.style.cssText = `display: grid; grid-template-columns: repeat(${dimension}, 1fr); grid-template-rows: auto;`;
 
@@ -37,8 +42,11 @@ function createEtchBox(dimension = 16) {
     }
 }
 
-const button = document.querySelector("button");
-button.addEventListener("click", getEtchSquares);
+const changeButton = document.querySelector("#change-button");
+changeButton.addEventListener("click", getEtchSquares);
+
+const resetButton = document.querySelector("#reset-button");
+resetButton.addEventListener("click", resetgrid);
 
 const container = document.querySelector(".container");
 
