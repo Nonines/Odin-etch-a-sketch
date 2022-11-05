@@ -1,8 +1,10 @@
 body {
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
     height: 100vh;
 }
 
@@ -10,12 +12,4 @@ body {
     height: 500px;
     width: 500px;
     border: 2px solid orchid;
-    /* background-color: aliceblue;
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: auto; */
-}
-
-.etchBox {
-    /* border: 1px solid lightblue;s */
 }
