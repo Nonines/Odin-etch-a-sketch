@@ -12,10 +12,8 @@ function getUserNumber() {
 function changeColor(element) {
     const currentBox = document.getElementById(element);
 
-    const colors = ["red", "blue", "pink", "green", "yellow"];
-    const randomColor = colors[Math.floor(Math.random() * colors.length)];
-
-    currentBox.style.backgroundColor = randomColor;
+    function randNum(limit=256) {return Math.floor(Math.random() * limit)};
+    currentBox.style.backgroundColor = `rgb(${randNum()}, ${randNum()}, ${randNum()})`;
 }
 
 function getEtchSquares() {
