@@ -1,0 +1,24 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    height: 500px;
+    width: 500px;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: auto;
+}
+
+.box {
+    border: 1px solid lightblue;
+}
+
+.box:hover {
+    background-color: red;
+}
