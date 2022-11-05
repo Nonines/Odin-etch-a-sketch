@@ -2,20 +2,37 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
-    height: 100vh;
+    height: 97vh;
+    background-color: antiquewhite;
+    font-family: monospace;
+}
+
+h1 {
+    color: rgb(238, 133, 115);
+    margin: 0;
+}
+
+button {
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    width: 160px;
+    background-color: rgb(238, 133, 115);
 }
 
 .buttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 20px;
+    width: 500px;
 }
 
 .container {
     height: 500px;
     width: 500px;
-    border: 2px solid orchid;
+    border: 2px dotted rgb(238, 133, 115);
+    border-radius: 12px;
 }
